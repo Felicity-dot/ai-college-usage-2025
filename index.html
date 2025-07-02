@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Explore how U.S. students are using Writing AI, Paper AI, and AI Assistants in college in 2025. See real stats, charts, and insights on College AI trends." />
+  <meta name="keywords" content="Writing AI, Paper AI, AI Assistant, College AI, student AI tools, AI in education, ChatGPT in college, AI writing help" />
+  <meta name="author" content="Fariha" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "TechArticle",
+    "headline": "How U.S. College Students Use AI in 2025",
+    "author": {
+      "@type": "Person",
+      "name": "Fariha"
+    },
+    "datePublished": "2025-07-02",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Your Company/Platform"
+    },
+    "keywords": [
+      "Writing AI",
+      "Paper AI",
+      "AI Assistant",
+      "College AI",
+      "Student AI tools",
+      "ChatGPT in college"
+    ],
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://yourdomain.com/article-url"
+    }
+  }
+  </script>
+  <title>How U.S. College Students Use AI in 2025</title>
+ <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0"></script>
+
+    <style>
+        html {
+  scroll-behavior: smooth;
+}
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.7;
+      margin: 0;
+      padding: 0;
+      background: #f8f9fa;
+      color: #00264f;
+    }
+    header {
+  background-image: url('bg.png'); /* your image filename */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  padding: 4rem 1rem;
+  text-align: center;
+  position: relative;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(137, 55, 95, 0.75); /* maroon overlay */
+  z-index: 0;
+}
+
+header h1,
+header .meta {
+  position: relative;
+  z-index: 1;
+}
+
+.meta {
+  font-size: 0.9rem;
+  opacity: 0.95;
+  color: #ffffff;
+}
+    .container {
+      max-width: 960px;
+      margin: auto;
+      padding: 2rem;
+      background: #ffffff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    h2, h3 { color: #89375F; }
+    img {
+      max-width: 100%;
+      height: auto;
+      margin: 1rem 0;
+      border-radius: 6px;
+    }
+    .chart-section {
+  max-width: 600px;
+  margin: 2.5rem auto;
+  padding: 1.5rem;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0,0,0,0.04);
+  
+}
+.chart-section canvas {
+  width: 100% !important;
+  height: auto !important;
+  max-height: 340px;
+}
+.chart-section h2 {
+  text-align: center;
+  color: #89375F;
+  margin-bottom: 1.5rem;
+}
+
+    .toc {
+      border-left: 4px solid #89375F;
+      padding-left: 1rem;
+      margin-bottom: 2rem;
+    }
+    .toc a {
+      display: block;
+      color: #00264f;
+      text-decoration: none;
+      margin: 0.4rem 0;
+    }
+    .toc a:hover {
+      text-decoration: underline;
+    }
+       .references {
+      margin-top: 3rem;
+      padding-top: 1rem;
+      border-top: 2px solid #89375F;
+      font-size: 0.95rem;
+    }
+    .references p {
+      margin: 0.5rem 0;
+    }
+    .references a {
+      color: #00264f;
+      text-decoration: none;
+    }
+    .references a:hover {
+      text-decoration: underline;
+    }
+    .faq-section {
+  max-width: 1030px;
+  margin: 3rem auto;
+  padding: 0 1rem;
+}
+
+
+.faq-toggle {
+  background: #89375F;
+  color: #fff;
+  border: none;
+  padding: 1rem 1.2rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  position: relative;
+  transition: background 0.3s;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2); /* ✅ subtle black shadow */
+}
+
+.faq-toggle::after {
+  content: "▼";
+  position: absolute;
+  right: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.faq-toggle.active::after {
+  transform: rotate(180deg);
+}
+
+.faq-toggle:hover {
+  background: #6d2c4d;
+}
+
+.faq-content {
+  display: none;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-top: none;
+  background: #fdfdfd;
+  text-align: left;
+  animation: slideDown 0.3s ease-in-out forwards;
+  color: #00264f;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: scaleY(0.95); }
+  to { opacity: 1; transform: scaleY(1); }
+}
+.filter-btn-group .filter-button {
+  background: #89375F;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 0.2rem;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.filter-btn-group .filter-button.active {
+  background: #4e1e33;
+}
+
+.filter-button:hover {
+  background: #6d2c4d;
+}
+
+.filter-content-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.filter-card {
+  display: block;
+  background: #fff;
+  padding: 1rem;
+  border-left: 4px solid #89375F;
+  border-radius: 4px;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+  color: #00264f;
+}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>How U.S. College Students Use AI in 2025</h1>
+    <div class="meta">📅 July 2, 2025 · ⏱️ 8 min read</div>
+  </header>
+
+  <div class="container">
+    <div class="toc">
+    <h3 style="margin-bottom: 1rem;">Table of Contents</h3>
+<a href="#intro" style="text-decoration: underline;">1. Introduction: AI’s Transformative Role</a>
+<a href="#common" style="text-decoration: underline;">2. How Common Is College AI in 2025?</a>
+<a href="#popular" style="text-decoration: underline;">3. Most Popular AI Assistants Used by College Students in 2025</a>
+<a href="#usage" style="text-decoration: underline;">4. How Students Use Writing and Paper AI to Improve Academic Performance</a>
+<a href="#demographics" style="text-decoration: underline;">5. Which Students Use College AI the Most in 2025?</a>
+<a href="#response" style="text-decoration: underline;">6. How Colleges Are Responding to AI Adoption</a>
+<a href="#benefits" style="text-decoration: underline;">7. Student Perspectives on AI Assistants: Benefits and Concerns</a>
+<a href="#skills" style="text-decoration: underline;">8. The Skills Debate: Do AI Assistants Harm or Help Student Skills?</a>
+<a href="#future" style="text-decoration: underline;">9. The Path Forward: What’s Next for College AI in the U.S.?</a>
+<a href="#sources" style="text-decoration: underline;">10. Sources</a>
+<a href="#faqs" style="text-decoration: underline;">11. FAQs</a>
+
+    </div>
+<section id="filter-box" style="max-width: 720px; margin: 4rem auto;">
+  <h2 style="text-align: center; color: #89375F;">Explore Filtered Insights</h2>
+
+  <div class="filter-btn-group" style="text-align: center; margin: 1.2rem 0;">
+    <button class="filter-button active" data-topic="all">All</button>
+    <button class="filter-button" data-topic="stem">STEM</button>
+    <button class="filter-button" data-topic="ethics">Ethics</button>
+    <button class="filter-button" data-topic="ai-tools">AI Tools</button>
+
+    <!-- The small maroon toggle button placed inline -->
+    <button id="expand-toggle" style="
+      background: #89375F;
+      color: white;
+      border: none;
+      margin-left: 0.6rem;
+      padding: 0.35rem 0.7rem;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
+    ">
+      <span id="expand-icon">➕</span>
+    </button>
+  </div>
+
+  <div class="filter-content-box" id="filter-content-box" style="display: none;">
+    <div class="filter-card" data-topic="stem">
+      <p><strong>STEM majors</strong> are the heaviest users of coding and problem-solving AI tools, such as GitHub Copilot and WolframAlpha.</p>
+    </div>
+    <div class="filter-card" data-topic="ethics">
+      <p><strong>AI Ethics concerns</strong> like bias, misinformation, and plagiarism risks are common discussion points among students and faculty.</p>
+    </div>
+    <div class="filter-card" data-topic="ai-tools">
+      <p><strong>AI tools like ChatGPT and Grammarly</strong> are now deeply embedded in essay writing, note-taking, and research workflows.</p>
+    </div>
+    <div class="filter-card" data-topic="ai-tools stem">
+      <p><strong>Multidisciplinary overlap:</strong> STEM students are also using Writing AI for lab reports and Ethics AI models to flag academic misconduct.</p>
+    </div>
+  </div>
+</section>
+
+
+
+    <h2 id="intro">Introduction: AI’s Transformative Role in Higher Education</h2>
+    <p>In 2025, artificial intelligence is not optional—it is essential. On U.S. campuses, it is no longer a question of if students use artificial intelligence, but how deeply they engage with it. From study sessions to submission deadlines, college AI tools are now embedded into everyday academic routines.</p>
+
+<p>Students rely on writing tools like ChatGPT and Grammarly to draft essays, refine arguments, and improve clarity. Others turn to paper AI tools for citation formatting, summarizing readings, and structuring assignments. Meanwhile, AI assistants such as Notion AI and Microsoft Copilot help manage group projects, schedule tasks, and generate quick study guides.</p>
+
+<p>These tools are not just convenient—they are reshaping how students learn, write, and collaborate. This article presents a data-rich snapshot of how U.S. students are using college AI in 2025, based on the latest surveys, research studies, and trend analyses. It explores usage trends across disciplines, student demographics, tool preferences, and institutional responses to this technological shift.</p>
+
+<p>For educators, administrators, and decision-makers, understanding these trends is critical to supporting students in an academic landscape that is evolving faster than ever.</p>
+<div style="
+  max-width: 700px;
+  margin: 2rem auto;
+  text-align: center;
+">
+  <img src="Infographic 1.png" alt="Infographic showing AI use among U.S. college students in 2025" style="
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  " />
+</div>
+<h2 id="Common">How Common Is College AI in 2025?</h2>
+<p>AI use among college students has surged dramatically in recent years. According to a <strong>2024 survey</strong> by Campus Technology and the Digital Education Council, <strong>86% of students globally</strong> use AI in their studies (<a class="source-link" href="https://campustechnology.com/articles/2024/08/28/survey-86-of-students-already-use-ai-in-their-studies.aspx" target="_blank">Campus Technology</a>). In the U.S., awareness and use are even higher. At the University of Michigan, <strong>98.5%</strong> of students knew about ChatGPT, and <strong>58.1%</strong> had used it by early 2024 (<a class="source-link" href="https://www.michigandaily.com/web/data/how-do-students-use-chatgpt/" target="_blank">Michigan Daily</a>).</p>
+
+<p>According to <a class="source-link" href="https://www.axios.com/2025/05/26/ai-chatgpt-cheating-college-teachers" target="_blank">Axios</a>, <strong>90%</strong> of students had already used ChatGPT for assignments by January 2023. This shift reveals a deeper transformation: AI assistants have become as fundamental as search engines or word processors.</p>
+
+    <h2 id="popular">Most Popular AI Assistants Used by College Students in 2025</h2>
+    <p>Students typically use multiple AI tools to meet diverse academic needs. Research shows undergraduates use an average of <strong>2.1 different AI applications</strong> in their coursework (<a class="source-link" href="https://campustechnology.com/articles/2024/08/28/survey-86-of-students-already-use-ai-in-their-studies.aspx" target="_blank">Campus Technology</a>).</p>
+
+ <div class="chart-section">
+  <h2 style="text-align: center;">Top AI Tools Used by U.S. College Students in 2025</h2>
+  <canvas id="myChart" width="600" height="250"></canvas>
+</div>
+
+
+<p>Other tools like Snapchat’s My AI and Scholarcy are also used, especially for research summaries and quick information extraction (<a class="source-link" href="https://www.jisc.ac.uk/reports/student-perceptions-of-ai-2025" target="_blank">Jisc National Centre for AI</a>).</p>
+
+    <h2 id="popular">How Students Use Writing and Paper AI to Improve Academic Performance</h2>
+   
+    <p>AI supports a wide range of academic tasks:</p>
+    
+<ul>
+  <li><strong>Research and information search:</strong> <strong>69%</strong> of students use AI Assistants to find and summarize course-related information (<a class="source-link" href="https://campustechnology.com/articles/2024/08/28/survey-86-of-students-already-use-ai-in-their-studies.aspx" target="_blank">Campus Technology</a>).</li>
+  <li><strong>Writing and editing:</strong> <strong>42%</strong> rely on Writing AI for grammar and style checks, while <strong>24%</strong> use it to generate first drafts.</li>
+  <li><strong>Summarization and note-taking:</strong> Tools help condense lectures and readings (<a class="source-link" href="https://www.jisc.ac.uk/reports/student-perceptions-of-ai-2025" target="_blank">Jisc</a>).</li>
+  <li><strong>Studying and review:</strong> <strong>73%</strong> say AI helps them understand material better (<a class="source-link" href="https://www.prnewswire.com/news-releases/quizlets-state-of-ai-in-education-survey-reveals-teachers-are-surprise-ai-champions-301884427.html" target="_blank">PR Newswire</a>).</li>
+  <li><strong>Coding and STEM help:</strong> AI tools like GitHub Copilot are widely used but restricted in exams (<a class="source-link" href="https://www.michigandaily.com/web/data/how-do-students-use-chatgpt/" target="_blank">Michigan Daily</a>).</li>
+  <li><strong>Productivity and organization:</strong> <strong>41%</strong> say AI helps them stay organized (<a class="source-link" href="https://investor.chegg.com/Press-Releases/press-release-details/2025/Chegg-Global-Student-Survey-2025-80-of-Undergraduates-Worldwide-Have-Used-GenAI-to-Support-their-Studies--But-Accuracy-a-Top-Concern/default.aspx" target="_blank">Chegg Investor Relations</a>).</li>
+</ul>
+<div class="chart-section">
+  <h2>How Students Use College AI Tools</h2>
+  <canvas id="aiUsePieChart" width="400" height="400"></canvas>
+  <p style="font-size: 0.9rem; margin-top: 0.8rem; color: #444;">
+    <em>Note: Percentages do not total 100% as students reported using multiple AI tools.</em>
+  </p>
+</div>
+
+    <h2 id="demographics">Which Students Use College AI the Most</h2>
+    <p>AI adoption varies across academic groups. Upper-year students use AI Assistants more frequently than freshmen, likely due to heavier workloads (<a class="source-link" href="https://www.michigandaily.com/web/data/how-do-students-use-chatgpt/" target="_blank">Michigan Daily</a>).</p>
+<div class="filter-item" data-topic="stem">
+    <p><strong>STEM majors</strong> rely on AI coding tools, while <strong>humanities students</strong> favor writing and Paper AI for essays and research (<a class="source-link" href="https://sites.campbell.edu/academictechnology/2025/03/06/ai-in-higher-education-a-summary-of-recent-surveys-of-students-and-faculty/" target="_blank">Campbell University</a>).</p>
+    </div>
+<p><strong>International students</strong> and those with learning differences use AI Assistants for language support and accessibility (<a class="source-link" href="https://escholarship.org/content/qt2gf4p9hh/qt2gf4p9hh.pdf" target="_blank">eScholarship</a>).</p>
+<p>Institutional differences also matter: at high-tuition colleges, <strong>79.4%</strong> of students use ChatGPT, compared to <strong>53.9%</strong> at lower-tuition schools (<a class="source-link" href="https://www.michigandaily.com/web/data/how-do-students-use-chatgpt/" target="_blank">Michigan Daily</a>).</p>
+
+
+    <h2 id="response">How Colleges Are Responding to AI Adoption</h2>
+<p>As student use of AI surges, colleges are struggling to keep pace with this rapid transformation. A 2024 <a href="https://er.educause.edu/articles/2024/4/educause-quickpoll-results-a-growing-need-for-generative-ai-strategy" target="_blank">EDUCAUSE poll</a> found that only 33% of colleges provide official AI tools, and fewer than 10% have integrated them into learning platforms. Even more striking, only 8% of institutions had student AI literacy programs by early 2024, though many plan to introduce such initiatives soon.</p>
+
+<p>This lag in institutional readiness has led to widespread confusion around AI policies. A survey by <a href="https://www.insidehighered.com/news/student-success/academic-life/2024/09/16/college-students-uncertain-about-ai-policies" target="_blank">Inside Higher Ed</a> found that approximately 31% of U.S. undergraduates were uncertain whether or when AI use was permitted in their coursework, and only 16% reported that their schools had published clear AI-use guidelines. On a broader scale, 81% of college presidents acknowledged that their institutions had yet to implement formal AI policies. This policy vacuum often leaves faculty members to make autonomous decisions regarding AI use, resulting in inconsistent rules even within the same campus.</p>
+
+<p>Despite the gaps, progress is underway. Many campuses are piloting AI training programs and ethics workshops. <a href="https://campustechnology.com/articles/2024/08/28/survey-86-of-students-already-use-ai-in-their-studies.aspx" target="_blank">Campus Technology</a> reports that 73% of students support faculty AI training, and 72% want hands-on student instruction. Moreover, a majority (69%) of respondents in Chegg’s 2025 global survey expressed that their colleges should provide tailored generative AI tools to support learning (<a href="https://investor.chegg.com/Press-Releases/press-release-details/2025/Chegg-Global-Student-Survey-2025-80-of-Undergraduates-Worldwide-Have-Used-GenAI-to-Support-their-Studies--But-Accuracy-a-Top-Concern/default.aspx" target="_blank">Chegg Investor Relations</a>). In response, many campuses are expanding AI literacy and ethics courses, while some institutions have launched dedicated AI research centers and institutes to explore AI’s educational impact.</p>
+<h2 id="benefits">Student Perspectives on AI Assistants: Benefits and Concerns</h2>
+<p>Students approach AI with curiosity, caution, and growing dependence. Over <strong>53%</strong> say AI has improved their ability to understand difficult material (<a class="source-link" href="https://investor.chegg.com/Press-Releases/press-release-details/2025/Chegg-Global-Student-Survey-2025-80-of-Undergraduates-Worldwide-Have-Used-GenAI-to-Support-their-Studies--But-Accuracy-a-Top-Concern/default.aspx" target="_blank">Chegg</a>).</p>
+<p>For neurodiverse students, AI helps structure assignments and reduce overwhelm (<a class="source-link" href="https://www.jisc.ac.uk/reports/student-perceptions-of-ai-2025" target="_blank">Jisc</a>).</p>
+<div class="filter-item" data-topic="ethics">
+<p>Yet concerns remain. Students cite <strong>bias</strong>, <strong>inaccuracy</strong>, and <strong>data privacy</strong> as top anxieties. <strong>59%</strong> of administrators say AI has increased academic dishonesty (<a class="source-link" href="https://www.axios.com/2025/05/26/ai-chatgpt-cheating-college-teachers" target="_blank">Axios</a>).</p>
+</div>
+<p>Still, only <strong>6.8%</strong> of students want to remove AI tools entirely. Instead, <strong>71%</strong> want a voice in tool selection and clear rules for usage (<a class="source-link" href="https://campustechnology.com/articles/2024/08/28/survey-86-of-students-already-use-ai-in-their-studies.aspx" target="_blank">Campus Technology</a>).</p>
+
+<h2 id="skills">The Skills Debate: Do AI Assistants Harm or Help Student Skills?</h2>
+<p>Some fear that reliance on AI weakens critical thinking, problem-solving, and writing skills. In response, some programs now emphasize open-ended design challenges and justification of AI-assisted answers (<a class="source-link" href="https://www.insidehighered.com/news/student-success/academic-life/2024/09/16/college-students-uncertain-about-ai-policies" target="_blank">Inside Higher Ed</a>).</p>
+<p>One computer science major noted fears of job loss from automation (<a class="source-link" href="https://escholarship.org/content/qt2gf4p9hh/qt2gf4p9hh.pdf" target="_blank">eScholarship</a>).</p>
+<p>Globally, <strong>nearly 50%</strong> of students feel <strong>unprepared</strong> for an AI-driven workforce due to lack of training (<a class="source-link" href="https://campustechnology.com/articles/2024/08/28/survey-86-of-students-already-use-ai-in-their-studies.aspx" target="_blank">Campus Technology</a>).</p>
+
+<h2 id="future">The Path Forward: What’s Next for College AI in the U.S.?</h2>
+<div class="filter-item" data-topic="ai-tools">
+<p>In 2025, AI tools like ChatGPT, Grammarly, and Notion AI are indispensable. Students across disciplines use Writing AI and Paper AI to streamline work, improve clarity, and boost creativity.</p>
+</div>
+<p>Use is especially high among upper-level students and those with learning differences, showing AI’s power to <strong>level the academic playing field</strong>.</p>
+<p>Students don’t want bans—they want <strong>guidance</strong>. That means <strong>clear rules</strong>, <strong>robust literacy programs</strong>, and <strong>ethical frameworks</strong> around tool use.</p>
+<p>Colleges that empower students with AI education will not only maintain academic integrity but also prepare them for the workforce of the future.</p>
+<p>By treating AI as a skill to be developed—not a shortcut to be banned—schools can transform student anxiety into academic innovation.</p>
+ <div class="references">
+    <h2 id="sources">Sources</h2>
+      <p>Campus Technology (2024). <a href="https://campustechnology.com/articles/2024/08/28/survey-86-of-students-already-use-ai-in-their-studies.aspx" target="_blank">"Survey: 86% of Students Already Use AI in Their Studies."</a></p>
+      <p>Michigan Daily (2024). <a href="https://www.michigandaily.com/web/data/how-do-students-use-chatgpt/" target="_blank">"How Do Students Use ChatGPT?"</a></p>
+      <p> <a href="https://investor.chegg.com/Press-Releases/press-release-details/2025/Chegg-Global-Student-Survey-2025-80-of-Undergraduates-Worldwide-Have-Used-GenAI-to-Support-their-Studies--But-Accuracy-a-Top-Concern/default.aspx" target="_blank">Chegg Global Student Survey (2025).</a></p>
+      <p> <a href="https://er.educause.edu/articles/2024/4/educause-quickpoll-results-a-growing-need-for-generative-ai-strategy" target="_blank">EDUCAUSE Review (2024).</a></p>
+      <p> <a href="https://www.jisc.ac.uk/reports/student-perceptions-of-ai-2025" target="_blank">Jisc National Centre for AI (2025).</a></p>
+    </div>    
+</div>
+
+    <div style="
+  max-width: 970px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: none;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.07);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+">
+  <h2 id="faqs" style="text-align: center; color: #89375F;">FAQs</h2>
+<div class="faq-section">
+  <button class="faq-toggle" onclick="toggleFAQ('faq1')">📌 How accurate are AI-generated academic answers?</button>
+  <div class="faq-content" id="faq1">
+    While AI tools like ChatGPT can be impressively accurate, they’re not flawless. Always double-check important facts from credible sources.
+  </div>
+
+  <button class="faq-toggle" onclick="toggleFAQ('faq2')">📌 Are AI tools allowed in college assignments?</button>
+  <div class="faq-content" id="faq2">
+    Only about 16% of U.S. colleges have formal AI-use policies. Until it’s clear, always ask your professor what’s allowed.
+  </div>
+
+  <button class="faq-toggle" onclick="toggleFAQ('faq3')">📌 Which majors benefit most from AI tools?</button>
+  <div class="faq-content" id="faq3">
+    STEM students use AI for coding and data analysis, while humanities students lean on writing, summarizing, and brainstorming tools.
+  </div>
+
+  <button class="faq-toggle" onclick="toggleFAQ('faq4')">📌 Do students feel confident using AI?</button>
+  <div class="faq-content" id="faq4">
+    Nearly half of students feel unsure about using AI correctly. Most want more training or guidance from their schools.
+  </div>
+</div>
+
+  </div>
+</div>
+    
+     </div>
+  
+  </div>
+  <script>
+  const data = {
+    labels: ['ChatGPT', 'Grammarly', 'Microsoft Copilot', 'Google Gemini', 'Claude / Midjourney'],
+    datasets: [{
+  label: 'Percentage of Students Using',
+  data: [66, 25, 25, 13.6, 6],
+  backgroundColor: '#89375F',
+  borderRadius: 10,
+  hoverBackgroundColor: '#A94467', // ✅ Lighter color on hover
+  borderWidth: 0,
+  hoverBorderColor: '#502033', // ✅ Border effect
+  hoverBorderWidth: 2,
+  datalabels: {
+    anchor: 'center',
+    align: 'center',
+    color: '#fff',
+    font: {
+      weight: 'bold',
+      size: 14
+    },
+    formatter: (value) => value + '%'
+  }
+}]
+  };
+
+  const config = {
+    type: 'bar',
+    data: data,
+    options: {
+      indexAxis: 'y',
+      responsive: true,
+      plugins: {
+        datalabels: {},
+        tooltip: {
+          callbacks: {
+            afterLabel: function(context) {
+              const usageMap = [
+                "Writing, brainstorming, tutoring",
+                "Grammar and style checking",
+                "Productivity, coding, organization",
+                "Brainstorming, research, math help",
+                "Brainstorming, image generation"
+              ];
+              return "Primary Use: " + usageMap[context.dataIndex];
+            }
+          }
+        }
+      },
+      onClick: (evt, elements) => {
+        if (elements.length > 0) {
+          const index = elements[0].index;
+          const usageMap = [
+            "Writing, brainstorming, tutoring",
+            "Grammar and style checking",
+            "Productivity, coding, organization",
+            "Brainstorming, research, math help",
+            "Brainstorming, image generation"
+          ];
+          alert(`${data.labels[index]}: ${usageMap[index]}`);
+        }
+      },
+      scales: {
+        x: {
+          beginAtZero: true,
+          ticks: {
+            callback: function(value) {
+              return value + ' %';
+            }
+          }
+        }
+      }
+    },
+    plugins: [ChartDataLabels]
+  };
+
+  new Chart(document.getElementById('myChart'), config);
+</script>
+  <script>
+  function toggleFAQ(id) {
+    const content = document.getElementById(id);
+    const toggle = document.querySelector(`[onclick="toggleFAQ('${id}')"]`);
+    const isOpen = content.style.display === 'block';
+
+    // Close all
+    document.querySelectorAll('.faq-content').forEach(faq => faq.style.display = 'none');
+    document.querySelectorAll('.faq-toggle').forEach(btn => btn.classList.remove('active'));
+
+    if (!isOpen) {
+      content.style.display = 'block';
+      toggle.classList.add('active');
+    }
+  }
+</script>
+
+  <script>
+    
+
+    const config = {
+      type: 'bar',
+      data: data,
+      options: {
+        indexAxis: 'y',
+        responsive: true,
+        plugins: {
+          tooltip: {
+            callbacks: {
+              afterLabel: function(context) {
+                const usageMap = [
+                  "Writing, brainstorming, tutoring",
+                  "Grammar and style checking",
+                  "Productivity, coding, organization",
+                  "Brainstorming, research, math help",
+                  "Brainstorming, image generation"
+                ];
+                return "Primary Use: " + usageMap[context.dataIndex];
+              }
+            }
+          }
+        },
+        onClick: (evt, elements) => {
+          if (elements.length > 0) {
+            const index = elements[0].index;
+            const usageMap = [
+              "Writing, brainstorming, tutoring",
+              "Grammar and style checking",
+              "Productivity, coding, organization",
+              "Brainstorming, research, math help",
+              "Brainstorming, image generation"
+            ];
+            alert(`${data.labels[index]}: ${usageMap[index]}`);
+          }
+        },
+        scales: {
+          x: {
+            beginAtZero: true,
+            ticks: {
+              callback: function(value) {
+                return value + ' %';
+              }
+            }
+          }
+        }
+      },
+    };
+
+    new Chart(document.getElementById('myChart'), config);
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.2.0"></script>
+
+<script>
+  const pieData = {
+    labels: [
+      "Research & Info Search",
+      "Studying & Review (AI Tutors)",
+      "Writing & Editing",
+      "First Draft Generation",
+      "Productivity & Organization"
+    ],
+    datasets: [{
+      data: [69, 73, 42, 24, 41],
+      backgroundColor: [
+        "#89375F",
+        "#A94467",
+        "#BF5A7A",
+        "#D97594",
+        "#F39BB2"
+      ],
+      borderColor: "#ffffff",
+      borderWidth: 2,
+      hoverOffset: 35
+    }]
+  };
+
+  const pieConfig = {
+    type: 'pie',
+    data: pieData,
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      plugins: {
+        legend: {
+          position: 'bottom',
+          labels: {
+            color: '#00264f',
+            font: { size: 13 }
+          }
+        },
+        tooltip: {
+          callbacks: {
+            label: context => `${context.label}: ${context.parsed}%`
+          }
+        },
+        datalabels: {
+          color: '#fff',
+          font: {
+            weight: 'bold',
+            size: 14
+          },
+          formatter: value => value + '%'
+        }
+      }
+    },
+    plugins: [ChartDataLabels]
+  };
+
+  new Chart(document.getElementById('aiUsePieChart'), pieConfig);
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        const offsetTop = target.getBoundingClientRect().top + window.scrollY;
+        window.scrollTo({
+          top: offsetTop,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+</script>
+<script>
+  const buttons = document.querySelectorAll('.filter-button');
+  const cards = document.querySelectorAll('.filter-card');
+  const contentBox = document.getElementById('filter-content-box');
+  const expandIcon = document.getElementById('expand-icon');
+  let isExpanded = false;
+
+  // Toggle visibility of content section
+  document.getElementById('expand-toggle').addEventListener('click', () => {
+    isExpanded = !isExpanded;
+    contentBox.style.display = isExpanded ? 'block' : 'none';
+    expandIcon.textContent = isExpanded ? '➖' : '➕';
+  });
+
+  // Handle filter clicks
+  buttons.forEach(button => {
+    button.addEventListener('click', () => {
+      const selected = button.dataset.topic;
+
+      // Visually update buttons
+      buttons.forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');
+
+      // Show matching cards
+      cards.forEach(card => {
+        const topics = card.dataset.topic.split(" ");
+        if (selected === 'all' || topics.includes(selected)) {
+          card.style.display = 'block';
+        } else {
+          card.style.display = 'none';
+        }
+      });
+
+      // Auto-expand content if not already
+      if (!isExpanded) {
+        contentBox.style.display = 'block';
+        expandIcon.textContent = '➖';
+        isExpanded = true;
+      }
+    });
+  });
+</script>
+  
+</body>
+</html>
